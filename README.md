@@ -1,0 +1,1 @@
+- Lo primero que tenemos que hacer es ejecutar el comando mvn clean install para poder compilar el proyecto.
