@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>cartoon-api-boot</artifactId>
+
+    <parent>
+        <artifactId>cartoon-api-builder</artifactId>
+        <groupId>com.cartoon-api</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <!--MODULES-->
+        <dependency>
+            <groupId>com.cartoon</groupId>
+            <artifactId>cartoon-api-controller</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <!--MODULES-->
+    </dependencies>
+
+</project>

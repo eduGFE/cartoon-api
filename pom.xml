@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.2</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.cartoon-api</groupId>
+	<artifactId>cartoon-api-builder</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>cartoon-api-builder</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!--MODULES-->
+			<dependency>
+				<groupId>com.cartoon</groupId>
+				<artifactId>cartoon-api-contract</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.cartoon</groupId>
+				<artifactId>cartoon-api-vo</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.cartoon</groupId>
+				<artifactId>cartoon-api-dao</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.cartoon</groupId>
+				<artifactId>cartoon-api-service</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>com.cartoon</groupId>
+				<artifactId>cartoon-api-controller</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<!--MODULES-->
+
+		</dependencies>
+	</dependencyManagement>
+
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.11.0</version> <!-- Use a version that supports Java 17 -->
+					<configuration>
+						<source>17</source>
+						<target>17</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+	<modules>
+		<module>cartoon-api-contract</module>
+		<module>cartoon-api-vo</module>
+		<module>cartoon-api-dao</module>
+		<module>cartoon-api-providers</module>
+		<module>cartoon-api-service</module>
+		<module>cartoon-api-controller</module>
+		<module>cartoon-api-boot</module>
+
+	</modules>
+
+</project>
