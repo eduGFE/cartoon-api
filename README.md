@@ -1,6 +1,6 @@
 ## Instrucciones
 
-1. Deberemos tener Maven en nuestro equipo. Puedes descargarlo [aquí](https://maven.apache.org/download.cgi).
+1. Deberemos tener en nuestro equipo Docker y Maven. Puedes descargarlo [aquí](https://maven.apache.org/download.cgi).
 
 2. Ejecutar el siguiente comando para obtener la imagen de Docker de PostgreSQL:
 
