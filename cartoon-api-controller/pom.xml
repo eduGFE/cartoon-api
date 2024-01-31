@@ -25,13 +25,19 @@
             <artifactId>cartoon-api-service</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
         <dependency>
             <groupId>com.cartoon</groupId>
             <artifactId>cartoon-api-contract</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <!--MODULES-->
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -108,7 +108,6 @@
 		<module>cartoon-api-contract</module>
 		<module>cartoon-api-vo</module>
 		<module>cartoon-api-dao</module>
-		<module>cartoon-api-providers</module>
 		<module>cartoon-api-service</module>
 		<module>cartoon-api-controller</module>
 		<module>cartoon-api-boot</module>

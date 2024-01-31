@@ -10,10 +10,10 @@ import org.springframework.stereotype.Component;
 public class DataLoader implements CommandLineRunner {
 
     @Autowired
-    private CharacterServiceImpl characterServiceImpl;
+    private CharacterService characterService;
 
     @Override
     public void run(String... args) throws Exception {
-        characterServiceImpl.fetchAndSaveCharacters();
+        characterService.fetchAndSaveCharacters();
     }
 }

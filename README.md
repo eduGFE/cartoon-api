@@ -33,7 +33,7 @@
 7. Realizar la siguiente petición GET:
 
     ```
-    http://localhost:8080/cartoon/api/v1/cartoons
+    http://localhost:8080/cartoon/api/v1/character/cartoons
     ```
 
 <details>
@@ -63,38 +63,6 @@
     },
     {
       "name": "Beta-Seven",
-      "status": "Alive"
-    },
-    {
-      "name": "Blim Blam",
-      "status": "Alive"
-    },
-    {
-      "name": "Daron Jefferson",
-      "status": "Alive"
-    },
-    {
-      "name": "Karen Entity",
-      "status": "Alive"
-    },
-    {
-      "name": "Mrs. Sanchez",
-      "status": "unknown"
-    },
-    {
-      "name": "Ron Benson",
-      "status": "Alive"
-    },
-    {
-      "name": "Steven Phillips",
-      "status": "Alive"
-    },
-    {
-      "name": "Todd Crystal",
-      "status": "Alive"
-    },
-    {
-      "name": "Unity",
       "status": "Alive"
     }
   ]

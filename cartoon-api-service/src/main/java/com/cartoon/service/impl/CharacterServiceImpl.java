@@ -21,6 +21,13 @@ public class CharacterServiceImpl implements CharacterService {
     private CharacterMapper characterMapper;
     private final RestTemplate restTemplate = new RestTemplate();
 
+
+    @Override
+    public List<CartoonDTO> findAllCartoons() {
+        return characterMapper.findAllCartoons();
+    }
+
+
     public void fetchAndSaveCharacters() {
         String apiUrl = "https://rickandmortyapi.com/api/episode";
         EpisodeResponse episodeResponse = restTemplate.getForObject(apiUrl, EpisodeResponse.class);
@@ -38,10 +45,5 @@ public class CharacterServiceImpl implements CharacterService {
     private Episode getRandomEpisode(List<Episode> episodes) {
         Collections.shuffle(episodes);
         return episodes.get(0);
-    }
-
-    @Override
-    public List<CartoonDTO> findAllCartoons() {
-        return characterMapper.findAllCartoons();
     }
 }
