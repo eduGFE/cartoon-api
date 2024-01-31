@@ -1,17 +1,16 @@
-package com.cartoon.vo.response;
+package com.cartoon.vo.response.character;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.List;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
-public class Location {
+public class CharacterResponse {
+    private int id;
     private String name;
-    private String url;
+    private String status;
 }
