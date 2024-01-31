@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:latest
+    restart: always
+    container_name: cartoon-api
+    hostname: localhost
+    environment:
+      POSTGRES_DB: cartoons
+      POSTGRES_USER: eduardo
+      POSTGRES_PASSWORD: gomez
+    ports:
+      - 9091:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./init-scripts:/docker-entrypoint-initdb.d
+volumes:
+  db:
+    driver: local
+
