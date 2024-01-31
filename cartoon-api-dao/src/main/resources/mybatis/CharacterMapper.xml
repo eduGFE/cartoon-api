@@ -6,6 +6,8 @@
 <mapper namespace="com.cartoon.dao.data.mapper.CharacterMapper">
 
     <insert id="saveAll" parameterType="java.util.List">
+        DELETE FROM character;
+
         INSERT INTO public."character" (id, name, status)
         VALUES
         <foreach collection="list" item="character" separator=",">
@@ -13,6 +15,14 @@
         </foreach>
     </insert>
 
+    <resultMap id="CharacterResultMap" type="com.cartoon.contract.vo.CartoonDTO">
+        <result column="name" property="name" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <select id="findAllCartoons" resultMap="CharacterResultMap">
+        SELECT * FROM public.character
+    </select>
 
 </mapper>
 

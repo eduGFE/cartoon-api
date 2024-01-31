@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 
 
 @Import({DataLoader.class})
-@SpringBootApplication(scanBasePackages = {"com.cartoon.service"})
+@SpringBootApplication(scanBasePackages = {"com.cartoon.controller", "com.cartoon.service"})
 @MapperScan({"com.cartoon.dao.data.mapper"})
 public class BootApplication {
     public static void main(String[] args) {

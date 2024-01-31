@@ -1,0 +1,16 @@
+cartoons:
+  get:
+    tags:
+      - cartoon
+    description: Returns all cartoon
+    operationId: findAllCartoons
+    responses:
+      "200":
+        description: OK
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '../model/cartoons.model.yaml#/CartoonDTO'
+    deprecated: false
