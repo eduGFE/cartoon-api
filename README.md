@@ -36,7 +36,7 @@
     http://localhost:8080/cartoon/api/v1/character/cartoons
     ```
 
-<details>
+
   <summary>Mostrar JSON de ejemplo</summary>
 
   ```json
@@ -66,4 +66,4 @@
       "status": "Alive"
     }
   ]
-</details>
+
